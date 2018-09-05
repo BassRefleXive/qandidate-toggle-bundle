@@ -53,14 +53,14 @@ class ToggleCollector extends DataCollector
      */
     public function collect(Request $request, Response $response, \Exception $exception = null)
     {
-//        $serializer = new ToggleSerializer(new OperatorConditionSerializer(new OperatorSerializer()));
-//
-//        $toggleData = array_map(function (Toggle $toggle) use ($serializer) {
-//            return $serializer->serialize($toggle);
-//        }, $this->toggleManager->all());
-//
-//        $this->data['toggleDetails'] = $toggleData;
-//        $this->data['context'] = $this->contextFactory->createContext();
+        $serializer = new ToggleSerializer(new OperatorConditionSerializer(new OperatorSerializer()));
+
+        $toggleData = array_map(function (Toggle $toggle) use ($serializer) {
+            return $serializer->serialize($toggle);
+        }, $this->toggleManager->all());
+
+        $this->data['toggleDetails'] = $toggleData;
+        $this->data['context'] = $this->contextFactory->createContext();
     }
 
     /**

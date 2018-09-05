@@ -48,11 +48,11 @@
             <tag name="kernel.event_listener" event="kernel.controller" />
         </service>
 
-        <service id="qandidate.toggle.data_collector.toggle_collector" class="%qandidate.toggle.data_collector.toggle_collector.class%">
-            <argument type="service" id="qandidate.toggle.manager" />
-            <argument type="service" id="qandidate.toggle.context_factory" />
-            <tag name="data_collector" id="qandidate.toggle_collector" template="@QandidateToggle\data_collector\toggle.html.twig" />
-        </service>
+        <!--<service id="qandidate.toggle.data_collector.toggle_collector" class="%qandidate.toggle.data_collector.toggle_collector.class%">-->
+            <!--<argument type="service" id="qandidate.toggle.manager" />-->
+            <!--<argument type="service" id="qandidate.toggle.context_factory" />-->
+            <!--<tag name="data_collector" id="qandidate.toggle_collector" template="@QandidateToggle\data_collector\toggle.html.twig" />-->
+        <!--</service>-->
 
     </services>
 </container>
